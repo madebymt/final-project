@@ -1,11 +1,21 @@
 import React,{ Component } from 'react'
+import Search from './Search'
+import Create from './Create'
+import Board from './Board'
+import './home.css'
+
 
 class Home extends Component {
   render(){
     return(
       <div>
-       <h2>I am home</h2>
-       <img src="../img/idea.png" alt=""/>
+        <div>
+          <Search/>
+        </div>
+        <div>
+          <Create/>
+        </div>
+        <Board/>
       </div>
 
     )

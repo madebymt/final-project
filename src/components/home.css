@@ -1,0 +1,14 @@
+.search-bar {
+  width: 50%;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.button {
+  background: #B87D4B;
+  border: none;
+  color: white;
+  width: 10%;
+  padding: 1rem;
+  border-radius: 10px;
+}
