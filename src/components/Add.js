@@ -1,4 +1,5 @@
 import React,{ Component } from 'react'
+import './add.css'
 
 class Add extends Component {
 
@@ -15,23 +16,27 @@ createBoard=(e)=>{
 
   render(){
     return(
-      <div>
+      <div className='container'>
         <form
           ref={(input)=>this.addform = input}
           onSubmit={(e)=>this.createBoard(e)}>
-          <div className ='container'>
-          <input type='text' placeholder='title'
+          <div className ='form-group'>
+          <input className='form-control' type='text' placeholder='title'
             ref={(input)=>this.title = input}/>
-          <br/>
-          <textarea placeholder='description'
+        </div>
+        <div className ='form-group'>
+          <textarea className='form-control' placeholder='description'
             ref={(input)=>this.desc = input}></textarea>
-          <br/>
-          <input type='file' placeholder ='upload'
+          </div>
+          <div className ='form-group'>
+          <input className='file'type='file' placeholder ='upload'
             ref={(input)=>this.file = input}/>
-          <br/>
-          <button>submit</button>
+          </div>
+          <div className ='form-group'>
+          <button class="btn btn-primary">submit</button>
           </div>
         </form>
+
       </div>
 
     )
