@@ -10,3 +10,14 @@
   height: 30%;
   margin: 10px;
 }
+
+.showidea {
+  color: brown;
+}
+
+.border2 {
+  border: 1px solid red;
+  background-color: yellow;
+  display: flex;
+  flex-wrap: wrap;
+}

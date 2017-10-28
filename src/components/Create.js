@@ -1,4 +1,5 @@
 import React,{ Component } from 'react'
+
 import './create.css'
 
 
@@ -8,7 +9,7 @@ class Create extends Component {
 
     return(
       <div className='container'>
-      <img onClick='makeRecord' className='mic' src="../img/mic.png" alt="record"/>
+      <img className='mic' src="../img/mic.png" alt="record"/>
       </div>
 
     )

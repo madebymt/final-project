@@ -3,13 +3,16 @@ import './add.css'
 
 class Add extends Component {
 
-createBoard=(e)=>{
+createBoard(e){
   e.preventDefault()
-  const addIdea = {
+  console.log('add')
+  const createIdea = {
     title:this.title.value,
     desc:this.desc.value,
     file:this.file.value
   }
+  console.log(createIdea)
+  this.props.addIdea(createIdea)
   this.addform.reset()
 
 }
@@ -26,17 +29,20 @@ createBoard=(e)=>{
         </div>
         <div className ='form-group'>
           <textarea className='form-control' placeholder='description'
-            ref={(input)=>this.desc = input}></textarea>
+            ref={(input)=>this.desc= input}></textarea>
           </div>
           <div className ='form-group'>
-          <input className='file'type='file' placeholder ='upload'
+          <input className='form-control' type='tag' placeholder ='Tag'
+            ref={(input)=>this.tag = input}/>
+          </div>
+          <div className ='form-group'>
+          <input className='form-control'type='file' placeholder ='Upload'
             ref={(input)=>this.file = input}/>
           </div>
           <div className ='form-group'>
-          <button class="btn btn-primary">submit</button>
+          <button className="btn btn-primary">submit</button>
           </div>
         </form>
-
       </div>
 
     )
