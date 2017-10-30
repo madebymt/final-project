@@ -1,23 +1,17 @@
 .board {
   display: flex;
-  flex-wrap: wrap;
-  margin: 1rem;
-  flex-basis: 20%;
+  flex-wrap: nowrap;
+  /*margin: 1rem;*/
+  /*flex-basis: 10%;*/
+  border: 1px solid red;
 }
 
 .img {
-  width: 30%;
+  width: 50%;
   height: 30%;
   margin: 10px;
 }
 
 .showidea {
   color: brown;
-}
-
-.border2 {
-  border: 1px solid red;
-  background-color: yellow;
-  display: flex;
-  flex-wrap: wrap;
 }

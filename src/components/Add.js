@@ -7,9 +7,10 @@ createBoard(e){
   e.preventDefault()
   console.log('add')
   const createIdea = {
-    title:this.title.value,
+    name:this.name.value,
     desc:this.desc.value,
-    file:this.file.value
+    file:this.file.value,
+    tag:this.tag.value
   }
   console.log(createIdea)
   this.props.addIdea(createIdea)
@@ -24,8 +25,8 @@ createBoard(e){
           ref={(input)=>this.addform = input}
           onSubmit={(e)=>this.createBoard(e)}>
           <div className ='form-group'>
-          <input className='form-control' type='text' placeholder='title'
-            ref={(input)=>this.title = input}/>
+          <input className='form-control' type='text' placeholder='name'
+            ref={(input)=>this.name = input}/>
         </div>
         <div className ='form-group'>
           <textarea className='form-control' placeholder='description'

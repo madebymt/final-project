@@ -12,7 +12,7 @@ class Layout extends Component {
       <header>
         <div className='header-section'>
         <img src="../img/idea.png" alt=""/>
-        <NavLink className='nav'xact to ='/'>Home</NavLink>
+        <NavLink className='nav' exact to ='/'>Home</NavLink>
         <NavLink className='nav' to ='/board'>Board</NavLink>
         <NavLink className='nav'to ='/Add'>Create</NavLink>
       </div>

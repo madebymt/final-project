@@ -1,5 +1,4 @@
 import React,{ Component } from 'react'
-import Data from './data'
 import './board.css'
 
 class BoardDetail extends Component {

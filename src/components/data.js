@@ -1,46 +1,23 @@
-let data = [
-{
-"id": 1,
-"title": "idea 1",
-"desc": "checking 123 ",
-"url": "http://placehold.it/600/92c952",
-"thumbnailUrl": "http://placehold.it/150/92c952"
-},
-{
-"id": 2,
-"title": "idea 1",
-"desc": "pinboard testing ",
-"url": "http://placehold.it/600/771796",
-"thumbnailUrl": "http://placehold.it/150/771796"
-},
-{
-"id": 3,
-"title": "idea 3",
-"desc": "pinboard testing 3",
-"url": "http://placehold.it/600/771796",
-"thumbnailUrl": "http://placehold.it/150/771796"
-},
-{
-"id": 4,
-"title": "idea 4",
-"desc": "pinboard testing 4 ",
-"url": "http://placehold.it/600/771796",
-"thumbnailUrl": "http://placehold.it/150/771796"
-},
-{
-"id": 5,
-"title": "idea 5",
-"desc": "pinboard testing 5 ",
-"url": "http://placehold.it/600/771796",
-"thumbnailUrl": "http://placehold.it/150/771796"
-},
-{
-"id": 6,
-"title": "idea 6",
-"desc": "pinboard testing 6 ",
-"url": "http://placehold.it/600/771796",
-"thumbnailUrl": "http://placehold.it/150/771796"
+
+const data = {
+  idea1: {
+    name: 'idea1',
+    image: 'http://rubycodes.com/wp-content/uploads/2017/10/3DLZS7FV0P.jpg',
+    desc: 'Everyones favorite white fish. We will cut it to the size you need and ship it.',
+    status: 'available'
+  },
+  idea2: {
+    name: 'idea2',
+    image: 'http://rubycodes.com/wp-content/uploads/2017/10/BY59S6FSEP.jpg',
+    desc: 'Everyones favorite white fish. We will cut it to the size you need and ship it.',
+    status: 'available'
+  },
+  idea3: {
+    name: 'idea3',
+    image: 'http://rubycodes.com/wp-content/uploads/2017/10/GLNZYWDY52.jpg',
+    desc: 'Everyones favorite white fish. We will cut it to the size you need and ship it.',
+    status: 'available'
+  }
 }
-]
 
 export default data
