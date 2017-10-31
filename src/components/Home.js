@@ -5,6 +5,8 @@ import Board from './Board'
 import BoardShow from './BoardShow'
 import data from './data'
 import base from '../base'
+import AudioRecorder from 'react-audio-recorder';
+
 import './home.css'
 
 
@@ -32,6 +34,10 @@ loadIdea(){
   render(){
     return(
       <div>
+        <div>
+          <AudioRecorder />
+
+        </div>
 
         <div>
           <Board
@@ -49,7 +55,6 @@ loadIdea(){
           }
 
         </ul>
-
       </div>
 
     )
