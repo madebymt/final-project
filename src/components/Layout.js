@@ -15,8 +15,9 @@ class Layout extends Component {
         <NavLink className='nav' exact to ='/'>Home</NavLink>
         <NavLink className='nav' to ='/board'>Board</NavLink>
         <NavLink className='nav'to ='/Add'>Create</NavLink>
+        <NavLink className='nav' to ='./Search'> <Search/></NavLink>
       </div>
-        <Search/>
+
       </header>
       {this.props.children}
       </div>

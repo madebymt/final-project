@@ -1,16 +1,18 @@
 import React,{ Component } from 'react'
 // import StackGrid , { transitions } from "react-stack-grid";
 import Add from './Add'
-import './board.css'
+import Media from './Media'
 
+import './board.css'
+// <Add addIdea = {this.props.addIdea}/>
 // const { scaleDown } = transitions;
 
 class Board extends Component {
   render() {
     return (
-      <div>
-        <Add addIdea = {this.props.addIdea}/>
-        <button onClick={this.props.loadIdea}>Load Idea</button>
+      <div className='container'>
+        <Media/>
+        <button className=''onClick={this.props.loadIdea}>Load Idea</button>
 
       </div>
 

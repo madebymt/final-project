@@ -1,11 +1,10 @@
 import React,{ Component } from 'react'
 import Create from './Create'
-// import Add from './Add'
 import Board from './Board'
 import BoardShow from './BoardShow'
 import data from './data'
 import base from '../base'
-import AudioRecorder from 'react-audio-recorder';
+import RecordPage from './RecordPage'
 
 import './home.css'
 
@@ -19,6 +18,7 @@ class Home extends Component {
       ideas:{}
     }
   }
+
 
 addIdea(createIdea){
   const ideas = {...this.state.ideas}
@@ -35,8 +35,7 @@ loadIdea(){
     return(
       <div>
         <div>
-          <AudioRecorder />
-
+          <RecordPage/>
         </div>
 
         <div>
